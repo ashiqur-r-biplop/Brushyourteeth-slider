@@ -9,37 +9,49 @@
 .container {
     position: relative;
     width: 100%;
-    min-height: 350px;
-    background-color: #000000;
-    color: white;
     padding: 50px 0px;
 }
 
 .container .contents-wraper {
     width: 70%;
     height: 100%;
-
-    min-height: inherit;
     margin: 0px auto;
     text-align: center;
-}
-
-.contents-wraper .header h1 {
     position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 1px;
 }
 
-.contents-wraper .testRow {
+.flex-container {
+    display: flex;
+
     width: 100%;
     height: 100%;
-    min-height: inherit;
+    height: 490px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container .section-image {
+    width: 50%;
+    height: 100%;
+
+}
+
+.flex-container .section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.contents-wraper .slider-sector {
+    width: 50%;
+    height: 100%;
     position: relative;
     overflow: hidden;
+    top: 50px;
+    left: -50px;
+    border: 1px solid #D1BB80;
 }
 
 .testRow .testItem {
@@ -50,10 +62,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px 100px !important;
+
 }
 
 .testItem p {
     margin-bottom: 10px;
+
     font-family: "Montserrat", sans-serif;
 }
 
@@ -71,7 +86,7 @@
 
 .contents-wraper .indicators {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px;
@@ -79,10 +94,10 @@
 }
 
 .contents-wraper .indicators .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: 0px 3px;
-    background-color: #5b20b3;
+    background-color: #D1BB80;
     border: 2px solid transparent;
     border-radius: 50%;
     display: inline-block;
@@ -90,9 +105,10 @@
 }
 
 .contents-wraper .indicators .active {
-    border: 2px solid #5b20b3;
-    width: 12px;
-    height: 12px;
+    border: 2px solid #D1BB80;
+    width: 11px;
+    height: 11px;
+    left: 50%;
     background-color: transparent;
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -147,9 +163,6 @@
         width: 90%;
     }
 
-    .contents-wraper .header h1 {
-        font-size: 22px;
-    }
 
     .testRow .testItem p {
         font-size: 16px;

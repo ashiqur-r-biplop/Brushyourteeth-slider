@@ -3,9 +3,15 @@ let testSlide = document.querySelectorAll(".testItem");
 // Access the indicators
 let dots = document.querySelectorAll(".dot");
 
-var counter = 0;
-var deleteInterval;
+let counter = 0;
+let deleteInterval;
 
+// Add click event to the indicators
+dots.forEach((dot) => {
+  dot.addEventListener("click", function () {
+    switchTest(this);
+  });
+});
 // Add click event to the indicators
 function switchTest(currentTest) {
   currentTest.classList.add("active");
