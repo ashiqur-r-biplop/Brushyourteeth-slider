@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="contents-wraper">
+            <section class="header">
+                <h1>WHAT OUR FANS SAY</h1>
+            </section>
+
+            <section class="testRow">
+                <div class="testItem active">
+                    <p>
+                        “Jacob and Elevate Marketing group have been excellent in curating and
+                        executing our marketing plan for Fantasy5. We look forward to
+                        continuing our relationship across all major platforms”
+                    </p>
+                </div>
+
+                <div class="testItem">
+                    <p>
+                        “Awesome service. Elevate Marketing group really know their stuff and have
+                        really made a difference to all our social media channels.”
+                    </p>
+                </div>
+
+
+            </section>
+
+            <section class="indicators">
+                <div class="dot active" attr="0" onclick="switchTest(this)"></div>
+                <div class="dot" attr="1" onclick="switchTest(this)"></div>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
